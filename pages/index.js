@@ -16,7 +16,7 @@ export default function Home() {
         console.log(data);
       });
     })();
-  });
+  }, [requestId]);
 
   async function submit() {
     const response = await fetch("https://thentic.tech/api/nfts/contract", {
